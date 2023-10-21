@@ -38,14 +38,14 @@ function render(variables = {}) {
           <h2>${variables.role ? variables.role : "Role"}</h2>
           <h3>${variables.city ? variables.city : "City,"}
           ${variables.country ? variables.country : "Country"}</h3>
-          <ul class="position-right">
+          <ul class="${variables.socialMediaPosition}">
             <li><a href="https://twitter.com/${
               variables.twitter
             }"><i class="fab fa-twitter"></i></a></li>
             <li><a href="https://github.com/${
               variables.github
             }"><i class="fab fa-github"></i></a></li>
-            <li><a href="https://linkedin.com/${
+            <li><a href="https://linkedin.com/in/${
               variables.linkedin
             }"><i class="fab fa-linkedin"></i></a></li>
             <li><a href="https://instagram.com/${
